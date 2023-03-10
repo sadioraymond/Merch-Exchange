@@ -1,0 +1,12 @@
+<html>
+    <head><title>Merchex</title></head>
+    <body>
+        <h1>Hello Django !</h1>
+        <p>Mes listes préférés sont :</p>
+        <ul>
+            {% for list in listings %}
+            <li>{{ list.title | upper}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
